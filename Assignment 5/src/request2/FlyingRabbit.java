@@ -1,0 +1,40 @@
+package request2;
+import java.util.*;
+
+public class FlyingRabbit {
+	
+	ArrayList<Sellable> list;
+	
+	public FlyingRabbit() {
+		list = new ArrayList<Sellable>();
+	}
+	
+	public void add(Sellable drink) {
+		list.add(drink);
+	}
+	
+	public void sort(Comparator<Sellable> comp) {
+		Collections.sort(list,comp);
+	}
+	
+	public void print() {
+		System.out.println("Item list");
+		for(int i = 0 ; i < list.size() ; i++) {
+			System.out.println("\t" + list.get(i));
+		}
+	}
+	
+	public void print(Filter filter) {
+		int isMatch = 0;
+		System.out.println("Filter list:");
+		for(Sellable match : list) {
+			if(filter.match(match)) {
+				System.out.println("\t" + match);
+				isMatch = 1;
+			}
+		}
+		if(isMatch == 0) {
+			System.out.println("--No match!");
+		}
+	}
+}

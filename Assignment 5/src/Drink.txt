@@ -1,0 +1,11 @@
+Name::Category::0::true
+Espresso::Hot Coffee::35::false
+Chocolate Milk Shake::Cool Drink::60::true
+Hot Plain Milk::Hot Milk::false
+Honey Lemon Iced Tea::Ice Tea::40::false
+Double Chocolate Milk Shake::Iced Milk::50::true
+Hot Chinese Tea::Hot Tea::30:: false
+Iced Caramel Milk::Iced Milk::40
+Iced Mocha::Iced Coffee::40::false
+Iced Coffee::30
+Hot Americano::Hot Coffee::40::false
